@@ -1,6 +1,13 @@
 <?php 
 require_once('function.php');
+require_once 'Mobile_Detect.php';
+$detect = new Mobile_Detect;
  $random = mt_rand(1, 5);
+ if ( $detect->isMobile() ) {
+    require_once('mobile/index.php');
+
+}else{
+
 ?>
 <!doctype html>
 <html  lang="zh_CN">
@@ -145,3 +152,5 @@ require_once('function.php');
 
 </body>
 </html>
+
+<?php } ?>
