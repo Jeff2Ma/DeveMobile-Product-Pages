@@ -2,10 +2,10 @@
         <div id="headerwrap">
          <h2><a href="http://devework.com/theme/devemobile/" title="DeveMobile 主题">DeveMobile 主题</a></h2>
               <ul>
-                <li><a href="http://devework.com/theme/devemobile/">首页</a></li>
-                <li><a href="more.html">详细</a></li>
-                <li><a href="demo.html">演示</a></li>
-                <li><a href="docs.html">文档</a></li>
+                <li><a href="./">首页</a></li>
+                <li><a href="more.php">详细</a></li>
+                <li><a href="more.php#demo">演示</a></li>
+                <li><a href="docs">文档</a></li>
                 <li><a target="_blank" href="http://devework.com/contact">联系</a></li>
                 <li><a class="" href="http://store.devework.com/product/devemobile">立即购买</a></li>
               </ul>
