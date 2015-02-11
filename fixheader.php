@@ -3,8 +3,8 @@
          <h2><a href="./" title="DeveMobile 主题">DeveMobile 主题</a></h2>
               <ul>
                 <li><a href="./">首页</a></li>
-                <li><a href="more.php">详细</a></li>
-                <li><a href="more.php#demo">演示</a></li>
+                <li><a href="more.html">详细</a></li>
+                <li><a href="more.html#demo">演示</a></li>
                 <li><a href="docs">文档</a></li>
                 <li><a target="_blank" href="http://devework.com/contact">联系</a></li>
                 <li><a class="" href="http://store.devework.com/product/devemobile">立即购买</a></li>

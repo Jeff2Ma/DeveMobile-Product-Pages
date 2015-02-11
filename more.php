@@ -8,7 +8,7 @@ require_once('function.php');
 	<title>DeveMobile 详细信息 | DeveWork</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="keywords" content="DeveMobile,下载,WordPress,手机主题,移动主题," />
-	<meta name="description" content="DeveMobile主题是由DeveWork 的Jeff 开发的一款WordPress 移动（手机）主题，基于Html5+CSS3开发，采用Android 5.0 Materials Design风格，配以Off Canvas 侧边栏导航，自带主题后台选项，另有相关文章、广告管理，社会化分享、WebApp等实用功能；" />
+	<meta name="description" content="DeveMobile主题是由DeveWork 的Jeff 开发的一款WordPress 移动（手机）主题，基于Html5+CSS3开发，采用Android 5.0 Material Design风格，配以Off Canvas 侧边栏导航，自带主题后台选项，另有相关文章、广告管理，社会化分享、WebApp等实用功能；" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<link rel="stylesheet" href="<?php echo $path ?>more/css/style2.css<?php echo $ver ?>" />
 	<link rel='stylesheet' href='<?php echo $path ?>main2.css<?php echo $ver ?>' type='text/css'>
@@ -22,7 +22,7 @@ require_once('function.php');
 	</header>
 	<h2>主题简介</h2>
 	<div id="introword">
-		<p>DeveMobile主题是由DeveWork 的Jeff 开发的一款WordPress 移动（手机）主题，基于Html5+CSS3开发，采用Android 5.0 Materials Design风格，配以Off Canvas 侧边栏导航，自带主题后台选项，另有相关文章、广告管理，社会化分享、WebApp等实用功能；更考虑了当前国内移动互联网发展情况，将主题性能高度优化。欲拥抱移动互联网的WordPress 用户，不可错过这款主题！</p>
+		<p>DeveMobile主题是由DeveWork 的Jeff 开发的一款WordPress 移动（手机）主题，基于Html5+CSS3开发，采用Android 5.0 Material Design风格，配以Off Canvas 侧边栏导航，自带主题后台选项，另有相关文章、广告管理，社会化分享、WebApp等实用功能；更考虑了当前国内移动互联网发展情况，将主题性能高度优化。欲拥抱移动互联网的WordPress 用户，不可错过这款主题！</p>
 	</div>
 	
 	<h2>主题详细</h2>
@@ -59,12 +59,13 @@ require_once('function.php');
 	<!--缩略图不要忘记添加参数-->
 	<ul>
 		<li><a href="<?php echo $path ?>more/full2/1.png" data-imagelightbox="a"><img src="<?php echo $path ?>more/full2/1.png?imageView/1/w/140/h/140/q/85" alt="" /></a></li>
+			<li><a href="<?php echo $path ?>more/full2/1.1.png" data-imagelightbox="a"><img src="<?php echo $path ?>more/full2/1.1.png?imageView/1/w/140/h/140/q/85" alt="" /></a></li>
 		<li><a href="<?php echo $path ?>more/full2/2.png" data-imagelightbox="a"><img src="<?php echo $path ?>more/full2/2.png?imageView/1/w/140/h/140/q/85" alt="" /></a></li>
 		<li><a href="<?php echo $path ?>more/full2/3.png" data-imagelightbox="a"><img src="<?php echo $path ?>more/full2/3.png?imageView/1/w/140/h/140/q/85" alt="" /></a></li>
 		<li><a href="<?php echo $path ?>more/full2/4.png" data-imagelightbox="a"><img src="<?php echo $path ?>more/full2/4.png?imageView/1/w/140/h/140/q/85" alt="" /></a></li>
 		<li><a href="<?php echo $path ?>more/full2/5.png" data-imagelightbox="a"><img src="<?php echo $path ?>more/full2/5.png?imageView/1/w/140/h/140/q/85" alt="" /></a></li>
 		<li><a href="<?php echo $path ?>more/full2/6.png" data-imagelightbox="a"><img src="<?php echo $path ?>more/full2/6.png?imageView/1/w/140/h/140/q/85" alt="" /></a></li>
-		<li><a href="<?php echo $path ?>more/full2/7.png" data-imagelightbox="a"><img src="<?php echo $path ?>more/full2/7.png?imageView/1/w/140/h/140/q/85" alt="" /></a></li>
+	
 		<li><a href="<?php echo $path ?>more/full2/8.png" data-imagelightbox="a"><img src="<?php echo $path ?>more/full2/8.png?imageView/1/w/140/h/140/q/85" alt="" /></a></li>
 		<li><a href="<?php echo $path ?>more/full2/9.png" data-imagelightbox="a"><img src="<?php echo $path ?>more/full2/9.png?imageView/1/w/140/h/140/q/85" alt="" /></a></li>
 		<li><a href="<?php echo $path ?>more/full2/10.png" data-imagelightbox="a"><img src="<?php echo $path ?>more/full2/10.png?imageView/1/w/140/h/140/q/85" alt="" /></a></li>

@@ -5,18 +5,19 @@ $detect = new Mobile_Detect;
  $random = mt_rand(1, 5);
  if ( $detect->isMobile() ) {
     require_once('mobile/index.php');
-
 }else{
-
 ?>
 <!doctype html>
 <html  lang="zh_CN">
 <!--图片原型来自网络，并经过本人二次加工，如需原型图片，可联系本人；文案内容为原创，请勿抄袭！-->
 <head>
-	<meta charset="utf-8">
-	<title>DeveMobile 主题主页 | DeveWork</title>
-	<meta name="keywords" content="DeveMobile,WordPress,手机主题,移动主题," />
-	<meta name="description" content="DeveMobile主题是由DeveWork 的Jeff 开发的一款WordPress 移动（手机）主题，基于Html5+CSS3开发，采用Android 5.0 Materials Design风格，配以Off Canvas 侧边栏导航，自带主题后台选项，另有相关文章、广告管理，社会化分享、WebApp等实用功能" />
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" /> <!--fuckbaidu -->
+  	<title>DeveMobile 主题主页 | DeveWork</title>
+  	<meta name="keywords" content="DeveMobile,WordPress,手机主题,移动主题," />
+  	<meta name="description" content="DeveMobile主题是由DeveWork 的Jeff 开发的一款WordPress 移动（手机）主题，基于Html5+CSS3开发，采用Android 5.0 Material Design风格，配以Off Canvas 侧边栏导航，自带主题后台选项，另有相关文章、广告管理，社会化分享、WebApp等实用功能" />
     <link rel='stylesheet' href='<?php echo $path ?>index/style2.css<?php echo $ver ?>' type='text/css'>
     <link rel='stylesheet' href='<?php echo $path ?>main2.css<?php echo $ver ?>' type='text/css'>
     <link rel="stylesheet" href="<?php echo $path ?>index/fontello/css/fontello.css<?php echo $ver ?>">
@@ -36,7 +37,7 @@ $detect = new Mobile_Detect;
     function MoveDown() {
       $(".main").moveDown();
     } 
-  </script>
+    </script>
 </head>
 <body>
   <div class="wrapper">
@@ -139,7 +140,7 @@ $detect = new Mobile_Detect;
     </div>
   </div>
       <script src="<?php echo $path ?>index/d3.v3.min.js"></script>
-        <script src="<?php echo $path ?>index/trianglify.js"></script>
+        <script src="<?php echo $path ?>index/trianglify.min.js"></script>
         <script>
             $(document).ready(function(){
             var t = new Trianglify();

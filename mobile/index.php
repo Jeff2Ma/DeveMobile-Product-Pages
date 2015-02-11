@@ -1,15 +1,15 @@
-
+<?php require_once('./function.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <title>DeveMobile 主题主页-手机版 | DeveWork</title>
-<link rel="stylesheet" href="./mobile/mobile.css?ver=12021619" />
+<link rel="stylesheet" href="<?php echo $path ?>mobile/mobile2.css?ver=201502102121" />
 <link
     rel="stylesheet"
     type="text/css"
-    href="./mobile/retina.css"
+    href="<?php echo $path ?>mobile/retina.css"
     media="only screen and (-webkit-min-device-pixel-ratio: 2)"
 />
 </head>
@@ -31,17 +31,18 @@
                     <article class="act_wp intro4">                           
 				<h1 class="hid">APP模式</h1>
 				<p class="hid">不仅仅适合手机浏览器、微信等浏览，更借助Web App模式，让网站瞬间变成一个本地APP</p>
-                                <a class="btn_dl" href="javascript:alert('请用PC浏览器访问本页面了解主题细节😊 http://devework.com/theme/devemobile')" id="downLink">了解更多</a>
+                    </article>
+                    <article class="act_wp intro5">                           
+                <h1 class="hid">DeveMobile</h1>
+                <p class="hid">专业的移动主题</p>
+                    <a class="btn_dl" href="javascript:alert('请用PC浏览器访问本页面了解主题细节😊 http://devework.com/theme/devemobile')" id="knowMore">了解更多</a>
                     </article>
             </div>	
     </div>	
-    <!--导航小圆点, .on为当前态-->
-    <div class="dots_bar" id="dots"><span class="on"></span><span></span><span></span><span></span></div>
-
-<script src="./mobile/swipe.js"></script> 
+    <div class="dots_bar" id="dots"><span class="on"></span><span></span><span></span><span></span><span></span></div>
+<script src="<?php echo $path ?>mobile/swipe.js"></script> 
 <script>
-var bullets = document.getElementById('dots').getElementsByTagName('span');
-
+  var bullets = document.getElementById('dots').getElementsByTagName('span');
   Swipe(document.getElementById('slider'), {
     auto: 0,
     speed: 160,
