@@ -1,25 +1,16 @@
-/*****************
-**全局css定义
-********/
+/**
+* 全局css定义
+*
+*/
 /*header 头部*/
 #header{z-index: 99999;font-weight: 600!important;height: 35px;
 	font-family:arial,sans-serif;
 	position:fixed;top:0;left:0;text-align:center;display:block;padding: 0.6em 0;width:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;background:rgba(255,255,255,0.25);font-weight:bold;font-size:13px;color:#000;-webkit-transition:all 500ms ease-in-out;-moz-transition:all 500ms ease-in-out;-o-transition:all 500ms ease-in-out;transition:all 500ms ease-in-out}
 #header:hover{color:black;background:rgba(255,255,255,0.5)}
 #headerwrap{width: 980px;margin: 0 auto;}
-#header h1, 
-#header h2 {background:url(logo.png) no-repeat; width: 200px;float: left; margin: -0.3em 0; padding: 0; }/*height: 32px; line-height: 32px; display: inline;  margin-bottom: 6px !important;*/
-#header h1 a, 
-
-#header h2 a { line-height: 32px; background-position: 0 0; background-repeat: no-repeat; color: #888; display: block; font-weight: normal; height: 32px; outline: none; text-decoration: none; text-indent: -9999px; *position: relative; }
-
+#header h1, #header h2 {background:url(logo.png) no-repeat; width: 200px;float: left; margin: -0.3em 0; padding: 0; }/*height: 32px; line-height: 32px; display: inline;  margin-bottom: 6px !important;*/
+#header h1 a, #header h2 a { line-height: 32px; background-position: 0 0; background-repeat: no-repeat; color: #888; display: block; font-weight: normal; height: 32px; outline: none; text-decoration: none; text-indent: -9999px; *position: relative; }
 #header ul { display: inline; float: right; margin: 0;padding: 0 }
 #header ul li { display: inline; margin: 0;padding: 0}
 #header ul li a { color: #333; float: left !important;margin-left: 30px; margin-right: 8px; padding: 0; text-decoration: none; }
 #header ul li a:hover { color:#08c; }/*#08c*/
-/*小屏幕的不打算兼容了
-#phone-display-tip{display: none;}
-@media only screen and  (max-width:600px){
-#header{display: none!important;}
-#phone-display-tip{display:block;color:red;background: #fff;}
-}*/

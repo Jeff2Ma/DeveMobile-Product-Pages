@@ -9,7 +9,7 @@ $detect = new Mobile_Detect;
 ?>
 <!doctype html>
 <html  lang="zh_CN">
-<!--图片原型来自网络，并经过本人二次加工，如需原型图片，可联系本人；文案内容为原创，请勿抄袭！-->
+<!--图片原型来自网络，并经过本人二次加工；文案内容为原创，请勿抄袭！-->
 <head>
   	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -147,11 +147,9 @@ $detect = new Mobile_Detect;
             var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
             var dwdraw =document.getElementById("pattern-draw");
             dwdraw.setAttribute('style', 'background-image: '+pattern.dataUrl);
-            //document.body.setAttribute('style', 'background-image: '+pattern.dataUrl);
              });
         </script>
 
 </body>
 </html>
-
 <?php } ?>
