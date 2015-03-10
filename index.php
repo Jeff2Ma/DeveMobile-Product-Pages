@@ -24,20 +24,7 @@ $detect = new Mobile_Detect;
     <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
     <script type="text/javascript" src="<?php echo $path ?>index/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo $path ?>index/jquery.onepage-scroll.js<?php echo $ver ?>"></script>
-    <script>
-    $(document).ready(function(){
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        loop: true,
-           //updateURL: true, 
-        responsiveFallback: 600
-      });
-    });
-    //鼠标点击事件，下一页
-    function MoveDown() {
-      $(".main").moveDown();
-    } 
-    </script>
+
 </head>
 <body>
   <div class="wrapper">
@@ -58,24 +45,14 @@ $detect = new Mobile_Detect;
                         <span class="preview">
                             <a href="http://devework.com/theme/easemobile/" title="购买另外一款移动主题EaseMobile" id="downloadBtnfree" >EaseMobile</a>
                               <!--<span class="txt" id="tipPopup"></span>-->
-                        </span><!--
-                            <div class="baidushare">
-                                  <div class="bdsharebuttonbox">
-                                  <a href="#" class="bds_more icon-plus" data-cmd="more"></a>
-                                  <a href="#" class="bds_qzone icon-qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-                                  <a href="#" class="bds_tsina icon-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
-                                  <a href="#" class="bds_tqq icon-tengxunweibo" data-cmd="tqq" title="分享到腾讯微博"></a>
-                                  <a href="#" class="bds_renren icon-renren" data-cmd="renren" title="分享到人人网"></a>
-                                  <a href="#" class="bds_weixin icon-wechat" data-cmd="weixin" title="分享到微信"></a>
-                                  </div>
-                            </div>-->
+                        </span>
                   </p>
                 </div>
             </div>
 
           </div>            
 
-  <p class="nav-down"><a onclick="MoveDown();" class="pulsate-opacity"><i class="icon-down"></i></a></p>
+  <p class="nav-down"><a id="MoveDown" class="pulsate-opacity"><i class="icon-down"></i></a></p>
 
       </section>        
       <section class="page1">
@@ -138,7 +115,23 @@ $detect = new Mobile_Detect;
      
 
     </div>
-  </div>
+  </div>    
+
+    <script>
+      $(document).ready(function(){
+        $(".main").onepage_scroll({
+          sectionContainer: "section",
+          loop: true,
+             //updateURL: true, 
+          responsiveFallback: 600
+        });
+        //鼠标点击事件，下一页
+        $('#MoveDown').click(function() {
+          $(".main").moveDown();
+        });
+      }); 
+    </script>
+
       <script src="<?php echo $path ?>index/d3.v3.min.js"></script>
         <script src="<?php echo $path ?>index/trianglify.min.js"></script>
         <script>
@@ -149,7 +142,6 @@ $detect = new Mobile_Detect;
             dwdraw.setAttribute('style', 'background-image: '+pattern.dataUrl);
              });
         </script>
-
 </body>
 </html>
 <?php } ?>

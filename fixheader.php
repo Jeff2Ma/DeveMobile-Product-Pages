@@ -14,4 +14,3 @@
     <!--[if lt IE 9]>
     	<div id="header" style="color:red;background: #fff;">本页面不支持 <strong>IE 浏览器</strong>，请用现代的浏览器（如Chrome）浏览本页面！珍爱生命，远离IE！</div>
 	<![endif]-->
-  <!--<div id="phone-display-tip">本页面暂不支持 <strong>小屏幕</strong>（移动）设备，请用PC 或平板浏览本页面！谢谢！（原谅我偷懒~）</div>-->
