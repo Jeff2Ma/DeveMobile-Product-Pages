@@ -16,7 +16,6 @@ body.disabled-onepage-scroll,.disabled-onepage-scroll .onepage-wrapper,html{posi
 html{height:100%}
 body{background:#E2E4E7;padding:0;min-width: 980px;text-align:center;
 	font-family:Tahoma,STHeiti,”Helvetica Neue“,”Hiragino Sans GB”,'Microsoft Yahei','微软雅黑',Simsun,sans-self;
-	/*font-family:,'open sans';*/
 	position:relative;margin:0;height:100%;-webkit-font-smoothing:antialiased}
 .wrapper{height:100% !important;height:100%;margin:0 auto;overflow:hidden}
 a{text-decoration:none}
@@ -32,16 +31,6 @@ code.js{color:#FFAD00}
 .main{}
 .main h1{padding:150px 50px;float:left;width:100%;font-size:45px;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;font-weight:100;color:white;margin:0}
 .main h1.demo1{background:#1ABC9C}
-/*header 头部
-#header{z-index: 99999;font-weight: 600!important;height: 35px;position:absolute;top:0;left:0;text-align:center;display:block;padding: 0.6em 0;width:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;background:rgba(255,255,255,0.25);font-weight:bold;font-size:13px;color:#000;-webkit-transition:all 500ms ease-in-out;-moz-transition:all 500ms ease-in-out;-o-transition:all 500ms ease-in-out;transition:all 500ms ease-in-out}
-#header:hover{color:black;background:rgba(255,255,255,0.5)}
-#headerwrap{width: 980px;margin: 0 auto;}
-#header h1, #header h2 {background:url(logo.png) no-repeat; width: 200px;float: left; margin: -0.3em 0; padding: 0; }/*height: 32px; line-height: 32px; display: inline;  margin-bottom: 6px !important;
-#header h1 a,#header h2 a { line-height: 32px; background-position: 0 0; background-repeat: no-repeat; color: #888; display: block; font-weight: normal; height: 32px; outline: none; text-decoration: none; text-indent: -9999px; *position: relative; }
-#header ul { display: inline; float: right; margin: 0;padding: 0 }
-#header ul li { display: inline; margin: 0;padding: 0}
-#header ul li a { color: #333; float: left !important;margin-left: 30px; margin-right: 8px; padding: 0; text-decoration: none; }
-#header ul li a:hover { color:#00B58A; }/*#08c*/
 
 .reload.bell{font-size:12px;padding:20px;width:45px;text-align:center;height:47px;border-radius:50px;-webkit-border-radius:50px;-moz-border-radius:50px}
 .reload.bell #notification{font-size:25px;line-height:140%}
@@ -141,6 +130,21 @@ body.disabled-onepage-scroll .main section > img{position:relative;max-width:80%
 body.disabled-onepage-scroll code{width:95%;margin:0 auto 25px;float:none;overflow:hidden}
 body.disabled-onepage-scroll .main section.page3 .page_container{width:90%;margin-left:auto;margin-right:auto;right:0}
 
+/*思源黑体webfont*/ 
+@font-face {font-family: 'siyuanheiti';
+    src: url('siyuan/webfont.eot'); /* IE9*/
+    src: url('siyuan/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('siyuan/webfont.woff') format('woff'), /* chrome、firefox */
+    url('siyuan/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('siyuan/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+.siyuan{
+	font-family:"siyuanheiti",”Helvetica Neue“,”Hiragino Sans GB”,'Microsoft Yahei' !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+}
 
 /*兼容pc的大于1024分辨率*/
 @media only screen and  (max-width:1024px){

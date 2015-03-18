@@ -57,7 +57,7 @@ $detect = new Mobile_Detect;
       </section>        
       <section class="page1">
         <div class="page_container">
-          <h1>移动时代，触摸互联</h1>
+          <h1 class="siyuan">移动时代，触摸互联</h1>
           <h2>2013年 中国移动互联网市场规模已突破<strong>1060</strong>亿<br>
  			2014年 中国智能手机出货量约<strong>4.52</strong>亿部<br>
       2015年 中国移动互联网市场规模预计达<strong>4296</strong>亿<br>
@@ -70,7 +70,7 @@ $detect = new Mobile_Detect;
 	    
 	    <section class="page2">
 	      <div class="page_container">
-          <h1>简约，却不简单；扁平，亦小有水平</h1>
+          <h1 class="siyuan">简约，却不简单；扁平，亦小有水平</h1>
             <span class="left">
               <ul>
                 <li class="icon-android">Materials Design风格</li>
@@ -92,7 +92,7 @@ $detect = new Mobile_Detect;
 	    
 	    <section class="page3">
 	      <div class="page_container">
-          <h1>看着舒心，用着流畅</h1>
+          <h1 class="siyuan">看着舒心，用着流畅</h1>
           <h2>
             轻量级主题，核心JS 代码仅15kb；<br>
             最大限度地压缩精简代码；<br>
@@ -104,7 +104,7 @@ $detect = new Mobile_Detect;
 
        <section class="page4">
         <div class="page_container">
-          <h1>不是 APP，堪比 APP</h1>
+          <h1 class="siyuan">不是 APP，堪比 APP</h1>
              <h2>
 				不仅仅适合手机浏览器、微信、微博客户端浏览，<br>
 				更借助Web App模式，让网站瞬间变成一个本地APP。<br>
@@ -143,5 +143,5 @@ $detect = new Mobile_Detect;
              });
         </script>
 </body>
-</html>
-<?php } ?>
+<!--20150318 添加思源黑体webfont-->
+</html><?php } ?>
