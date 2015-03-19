@@ -1,6 +1,6 @@
  <div id="header">
         <div id="headerwrap">
-         <h2><a href="./" title="DeveMobile 主题">DeveMobile 主题</a></h2>
+         <h2><a href="./" title="DeveMobile 主题">DeveMobile</a></h2>
               <ul>
                 <li><a href="./">首页</a></li>
                 <li><a href="more.html">详细</a></li>

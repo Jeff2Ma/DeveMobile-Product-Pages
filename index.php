@@ -3,7 +3,7 @@ require_once('function.php');
 require_once 'Mobile_Detect.php';
 $detect = new Mobile_Detect;
  $random = mt_rand(1, 5);
- if ( $detect->isMobile() ) {
+ if ($detect->isMobile() ) {
     require_once('mobile/index.php');
 }else{
 ?>
@@ -24,7 +24,16 @@ $detect = new Mobile_Detect;
     <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
     <script type="text/javascript" src="<?php echo $path ?>index/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo $path ?>index/jquery.onepage-scroll.js<?php echo $ver ?>"></script>
-
+    <script>
+      $(document).ready(function(){
+        $(".main").onepage_scroll({
+          sectionContainer: "section",
+          loop: true,
+             //updateURL: true, 
+          responsiveFallback: 600
+        });
+      }); 
+    </script>
 </head>
 <body>
   <div class="wrapper">
@@ -35,9 +44,11 @@ $detect = new Mobile_Detect;
             <div class="focus">
               <div class="image"></div>
                 <div class="intro">
-                  <p class="intro_txt">
-                    <!--<span></span>-->
-                  </p>
+                  <div class="intro_txt yuehei">
+                    <p class="text1">WordPress Mobile Theme</p>
+                    <p class="text2">DeveMobile</p>
+                    <p class="text3">乘风破浪，顺势移动互联网！</p>
+                  </div>
                   <p class="intro_btn">
                     <span class="download">
                               <a href="http://store.devework.com/product/devemobile" title="立即购买">立即购买</a>
@@ -115,33 +126,22 @@ $detect = new Mobile_Detect;
      
 
     </div>
-  </div>    
-
-    <script>
-      $(document).ready(function(){
-        $(".main").onepage_scroll({
-          sectionContainer: "section",
-          loop: true,
-             //updateURL: true, 
-          responsiveFallback: 600
-        });
-        //鼠标点击事件，下一页
-        $('#MoveDown').click(function() {
-          $(".main").moveDown();
-        });
-      }); 
-    </script>
-
+  </div>
       <script src="<?php echo $path ?>index/d3.v3.min.js"></script>
         <script src="<?php echo $path ?>index/trianglify.min.js"></script>
         <script>
             $(document).ready(function(){
-            var t = new Trianglify();
-            var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
-            var dwdraw =document.getElementById("pattern-draw");
-            dwdraw.setAttribute('style', 'background-image: '+pattern.dataUrl);
-             });
+              //鼠标点击事件，下一页
+              $('#MoveDown').click(function() {
+                $(".main").moveDown();
+              });
+              //low ploy
+              var t = new Trianglify();
+              var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
+              var dwdraw =document.getElementById("pattern-draw");
+              dwdraw.setAttribute('style', 'background-image: '+pattern.dataUrl);
+               });
         </script>
 </body>
-<!--20150318 添加思源黑体webfont-->
+<!--20150318 添加思源黑体、悦黑webfont-->
 </html><?php } ?>
