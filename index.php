@@ -21,21 +21,20 @@ $detect = new Mobile_Detect;
     <link rel='stylesheet' href='<?php echo $path ?>index/style2.css<?php echo $ver ?>' type='text/css'>
     <link rel='stylesheet' href='<?php echo $path ?>main2.css<?php echo $ver ?>' type='text/css'>
     <link rel="stylesheet" href="<?php echo $path ?>index/fontello/css/fontello.css<?php echo $ver ?>">
+    <link rel="dns-prefetch" href="http://2.devework.com">
     <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
     <script type="text/javascript" src="<?php echo $path ?>index/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo $path ?>index/jquery.onepage-scroll.js<?php echo $ver ?>"></script>
-    <script>
-      $(document).ready(function(){
-        $(".main").onepage_scroll({
-          sectionContainer: "section",
-          loop: true,
-             //updateURL: true, 
-          responsiveFallback: 600
-        });
-      }); 
-    </script>
 </head>
 <body>
+  <div class="loading-home rectangle-bounce">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+</div>
+
   <div class="wrapper">
 		<?php require_once('fixheader.php');?>
 	  <div class="main">
@@ -62,6 +61,9 @@ $detect = new Mobile_Detect;
             </div>
 
           </div>            
+
+
+
 
   <p class="nav-down"><a id="MoveDown" class="pulsate-opacity"><i class="icon-down"></i></a></p>
 
@@ -131,15 +133,27 @@ $detect = new Mobile_Detect;
         <script src="<?php echo $path ?>index/trianglify.min.js"></script>
         <script>
             $(document).ready(function(){
-              //鼠标点击事件，下一页
-              $('#MoveDown').click(function() {
-                $(".main").moveDown();
-              });
-              //low ploy
-              var t = new Trianglify();
-              var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
-              var dwdraw =document.getElementById("pattern-draw");
-              dwdraw.setAttribute('style', 'background-image: '+pattern.dataUrl);
+                //main functions
+                $(".main").onepage_scroll({
+                  sectionContainer: "section",
+                  loop: true,
+                     //updateURL: true, 
+                  responsiveFallback: 600
+                });
+                //鼠标点击事件，下一页
+                $('#MoveDown').click(function() {
+                  $(".main").moveDown();
+                });
+                //low ploy
+                var t = new Trianglify();
+                var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
+                var dwdraw =document.getElementById("pattern-draw");
+                dwdraw.setAttribute('style', 'background-image: '+pattern.dataUrl);
+                //loading
+                setTimeout(function () {  
+                    $('.loading-home').css('opacity','0');
+                    $('.wrapper').css('opacity','1');    
+                 }, 1200);
                });
         </script>
 </body>
