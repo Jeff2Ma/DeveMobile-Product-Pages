@@ -11,13 +11,12 @@ $detect = new Mobile_Detect;
 <html  lang="zh_CN">
 <!--图片原型来自网络，并经过本人二次加工；文案内容为原创，请勿抄袭！-->
 <head>
-  	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" /> <!--fuckbaidu -->
-  	<title>DeveMobile 主题主页 | DeveWork</title>
-  	<meta name="keywords" content="DeveMobile,WordPress,手机主题,移动主题," />
-  	<meta name="description" content="DeveMobile主题是由DeveWork 的Jeff 开发的一款WordPress 移动（手机）主题，基于Html5+CSS3开发，采用Android 5.0 Material Design风格，配以Off Canvas 侧边栏导航，自带主题后台选项，另有相关文章、广告管理，社会化分享、WebApp等实用功能" />
+    <title>DeveMobile 主题主页 | DeveWork</title>
+    <meta name="keywords" content="DeveMobile,WordPress,手机主题,移动主题," />
+    <meta name="description" content="DeveMobile主题是由DeveWork 的Jeff 开发的一款WordPress 移动（手机）主题，基于Html5+CSS3开发，采用Android 5.0 Material Design风格，配以Off Canvas 侧边栏导航，自带主题后台选项，另有相关文章、广告管理，社会化分享、WebApp等实用功能" />
     <link rel='stylesheet' href='<?php echo $path ?>index/style2.css<?php echo $ver ?>' type='text/css'>
     <link rel='stylesheet' href='<?php echo $path ?>main2.css<?php echo $ver ?>' type='text/css'>
     <link rel="stylesheet" href="<?php echo $path ?>index/fontello/css/fontello.css<?php echo $ver ?>">
@@ -27,14 +26,13 @@ $detect = new Mobile_Detect;
     <script type="text/javascript" src="<?php echo $path ?>index/jquery.onepage-scroll.js<?php echo $ver ?>"></script>
 </head>
 <body>
-  <div class="loading-home rectangle-bounce">
-      <div class="rect1"></div>
-      <div class="rect2"></div>
-      <div class="rect3"></div>
-      <div class="rect4"></div>
-      <div class="rect5"></div>
-</div>
-
+    <div class="loading-home rectangle-bounce">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
   <div class="wrapper">
 		<?php require_once('fixheader.php');?>
 	  <div class="main">
@@ -61,12 +59,7 @@ $detect = new Mobile_Detect;
             </div>
 
           </div>            
-
-
-
-
-  <p class="nav-down"><a id="MoveDown" class="pulsate-opacity"><i class="icon-down"></i></a></p>
-
+      <p class="nav-down"><a id="MoveDown" class="pulsate-opacity"><i class="icon-down"></i></a></p>
       </section>        
       <section class="page1">
         <div class="page_container">
@@ -153,9 +146,10 @@ $detect = new Mobile_Detect;
                 setTimeout(function () {  
                     $('.loading-home').css('opacity','0');
                     $('.wrapper').css('opacity','1');    
-                 }, 1200);
+                 }, 1000);
                });
         </script>
 </body>
 <!--20150318 添加思源黑体、悦黑webfont-->
+<!--20150321 添加loading 特效-->
 </html><?php } ?>
