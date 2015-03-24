@@ -1,3 +1,6 @@
+/*
+* 20150324
+*/
 body,html{margin:0;overflow:hidden;-webkit-transition:opacity 400ms;-moz-transition:opacity 400ms;transition:opacity 400ms}
 body,.onepage-wrapper,html{display:block;position:static;padding:0;width:100%;height:100%}
 .onepage-wrapper{width:100%;height:100%;display:block;position:relative;padding:0;-webkit-transform-style:preserve-3d}
@@ -14,30 +17,18 @@ body,.onepage-wrapper,html{display:block;position:static;padding:0;width:100%;he
 body.disabled-onepage-scroll,.disabled-onepage-scroll .onepage-wrapper,html{position:inherit}
 /*详细布局*/
 html{height:100%}
-body{
-
-  background:#fff;padding:0;min-width: 980px;text-align:center;
-	font-family:Tahoma,STHeiti,”Helvetica Neue“,”Hiragino Sans GB”,'Microsoft Yahei','微软雅黑',Simsun,sans-self;
-	position:relative;margin:0;height:100%;-webkit-font-smoothing:antialiased}
-.wrapper{
-  opacity: 0;
-    -webkit-transition: opacity .3s ease-in-out;
--moz-transition: opacity .3s ease-in-out;
--o-transition: opacity .3s ease-in-out;
--ms-transition: opacity .3s ease-in-out;
-transition: opacity .3s ease-in-out;
-  height:100% !important;margin:0 auto;overflow:hidden}
+body{background:#fff;padding:0;min-width:980px;text-align:center;font-family:Tahoma,STHeiti,”Helvetica Neue“,”Hiragino Sans GB”,'Microsoft Yahei','微软雅黑',Simsun,sans-self;position:relative;margin:0;height:100%;-webkit-font-smoothing:antialiased}
+.wrapper{opacity:0;-webkit-transition:opacity .3s ease-in-out;-moz-transition:opacity .3s ease-in-out;-o-transition:opacity .3s ease-in-out;-ms-transition:opacity .3s ease-in-out;transition:opacity .3s ease-in-out;height:100% !important;margin:0 auto;overflow:hidden}
 a{text-decoration:none}
 h1,h2{width:100%;float:left}
-h1{margin-top:100px;color:#000;margin-bottom:5px;font-size:70px;font-weight:100}/*letter-spacing:-4px;*/
+h1{margin-top:100px;color:#000;margin-bottom:5px;font-size:70px;font-weight:100}
 h1 span{font-size:26px;margin:0 5px;text-transform:capitalize;background:rgba(0,0,0,0.85);display:inline-block;color:#6D461D;border-radius:5px 5px;-webkit-border-radius:5px 5px;-moz-border-radius:5px 5px;text-shadow:0 2px 8px rgba(0,0,0,0.75);padding:3px 10px}
 h2{color:#6D461D;font-weight:100;margin-top:0;margin-bottom:10px}
 .pointer{color:#9b59b6;font-family:'Pacifico',cursive;font-size:30px;margin-top:15px}
 code{margin:20px 1%;float:left;width:48%;height:105px;background:rgba(0,0,0,0.1);border:rgba(0,0,0,0.05) 5px solid;border-radius:5px;padding:5px;color:white;text-align:center;font-size:15px;margin-top:25px;display:block;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
 code.html{color:#7EC9E6}
 code.js{color:#FFAD00}
-.main{
-  float:left;width:100%;margin:0 auto}
+.main{float:left;width:100%;margin:0 auto}
 .main h1{padding:150px 50px;float:left;width:100%;font-size:45px;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;font-weight:100;color:white;margin:0}
 .main h1.demo1{background:#1ABC9C}
 /*loading*/
@@ -53,7 +44,6 @@ code.js{color:#FFAD00}
 }@keyframes stretchdelay{0%,40%,100%{transform:scaleY(0.4);-webkit-transform:scaleY(0.4)}
 20%{transform:scaleY(1.0);-webkit-transform:scaleY(1.0)}
 }
-
 .reload.bell{font-size:12px;padding:20px;width:45px;text-align:center;height:47px;border-radius:50px;-webkit-border-radius:50px;-moz-border-radius:50px}
 .reload.bell #notification{font-size:25px;line-height:140%}
 .reload,.btn{display:inline-block;border:4px solid #A2261E;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;background:#CC3126;display:inline-block;line-height:100%;padding:0.7em;text-decoration:none;color:#fff;width:100px;line-height:140%;font-size:17px;font-family:open sans;font-weight:bold}
@@ -73,55 +63,29 @@ header{position:relative;z-index:10}
 .main section > img{position:absolute;top:200px;right: -200px;max-width:100%;z-index:1}
 /*分屏*/
 /*.main section.page0 {background: #8CE893 url(img/5.jpg);background-size: cover;color: black;}*/
-.main section.page0 div.focus{position: relative; width: 100%; height: 468px;}
-.main section.page0 div.focus div.image{position: absolute; width: 700px; height: 478px; background: url(img/all4.png) no-repeat;left: -40px; bottom: 15%; *bottom: 7px;}/**background: url(intro.gif) no-repeat; */
-.main section.page0 div.focus div.intro{
-/*    background: url(font.png) no-repeat;*/
-   text-align: left;
-   text-indent: 5px;
-   color: #fff;
-    position: absolute; right: 0px; top: 0px;}
-
-    .main section.page0 div.focus div.intro p{
-        margin: 14px 0;
-}
-.main section.page0 div.focus div.intro .text1{
-      font-style: italic;
-      font-size: 24px;
-      line-height: 7px;
-
-}
-.main section.page0 div.focus div.intro .text2{
-    font-size: 72px;
-    font-weight: bold;
-}
-.main section.page0 div.focus div.intro .text3{
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 80px;
-}
-
-.main section.page0 div.focus div.intro .intro_txt{width: 100%; height: 144px;  position: relative;}
-.main section.page0 div.focus div.intro .intro_txt span{position: absolute; right: 6px; top: -2px; color: #fff; font-family: Tahoma;}
-.main section.page0 div.focus div.intro .intro_btn{padding-top: 70px;}
-.main section.page0 div.focus div.intro .intro_btn span{text-align: center;}
-.main section.page0 div.focus div.intro .intro_btn span a{background: rgba(255, 255, 255, 0.2);color: #fff;display: block;color:#fff;overflow: hidden;width: 110px;padding:15px 25px;font-size: 18px;border:1.5px solid #fff;
-	 -webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px; 
-	-webkit-transition: all 0.28s ease-out;-moz-transition: all 0.28s ease-out;-ms-transition: all 0.28s ease-out;-o-transition: all 0.28s ease-out;transition: all 0.28s ease-out;}
-.main section.page0 div.focus div.intro .intro_btn span a:hover{background: rgba(255, 255, 255, 0.3);text-decoration: underline;}            
-.main section.page0 div.focus div.intro .intro_btn span.txt{line-height: 2.5; color: #666; color: rgba(0, 0, 0, 0.2);}
-.main section.page0 div.focus div.intro .intro_btn span.txt em{font-style: normal;font-size: 22px;font-weight: bold;、}
-.main section.page0 div.focus div.intro .intro_btn span.txt del{font-size: 16px;}
-.main section.page0 div.focus div.intro .intro_btn span.download{display: block; float: left;}
+.main section.page0 div.focus{position:relative;width:100%;height:468px}
+.main section.page0 div.focus div.image{position:absolute;width:700px;height:478px;background:url(img/all4.png) no-repeat;left:-40px;bottom:15%;*bottom:7px}
+.main section.page0 div.focus div.intro{text-align:left;text-indent:5px;color:#fff;position:absolute;right:0px;top:0px}
+.main section.page0 div.focus div.intro p{margin:14px 0}
+.main section.page0 div.focus div.intro .text1{font-style:italic;font-size:24px;line-height:7px}
+.main section.page0 div.focus div.intro .text2{font-size:72px;font-weight:bold}
+.main section.page0 div.focus div.intro .text3{font-size:24px;font-weight:600;line-height:80px}
+.main section.page0 div.focus div.intro .intro_txt{width:100%;height:144px;position:relative}
+.main section.page0 div.focus div.intro .intro_txt span{position:absolute;right:6px;top:-2px;color:#fff;font-family:Tahoma}
+.main section.page0 div.focus div.intro .intro_btn{padding-top:70px}
+.main section.page0 div.focus div.intro .intro_btn span{text-align:center}
+.main section.page0 div.focus div.intro .intro_btn span a{background:rgba(255,255,255,0.2);color:#fff;display:block;color:#fff;overflow:hidden;width:110px;padding:15px 25px;font-size:18px;border:1.5px solid #fff;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;-webkit-transition:all 0.28s ease-out;-moz-transition:all 0.28s ease-out;-ms-transition:all 0.28s ease-out;-o-transition:all 0.28s ease-out;transition:all 0.28s ease-out}
+.main section.page0 div.focus div.intro .intro_btn span a:hover{background:rgba(255,255,255,0.3);text-decoration:underline}
+.main section.page0 div.focus div.intro .intro_btn span.txt{line-height:2.5;color:#666;color:rgba(0,0,0,0.2)}
+.main section.page0 div.focus div.intro .intro_btn span.txt em{font-style:normal;font-size:22px;font-weight:bold;、}
+.main section.page0 div.focus div.intro .intro_btn span.txt del{font-size:16px}
+.main section.page0 div.focus div.intro .intro_btn span.download{display:block;float:left}
 .main section.page0 div.focus div.intro .intro_btn span.download a{}
-.main section.page0 div.focus div.intro .intro_btn span.preview{display: block; float: left; margin-left: 10px;}
+.main section.page0 div.focus div.intro .intro_btn span.preview{display:block;float:left;margin-left:10px}
 .main section.page0 div.focus div.intro .intro_btn span.preview a{}
-.main section.page0 div.focus div.intro .intro_btn span.preview span.txt{text-decoration: underline; cursor: pointer;margin-top: 13px;
-display: block;}
-
-/*箭头导航*/
-.nav-down{position: fixed;bottom: 1em;left: 49.5%;cursor:pointer;z-index: 9999;font-size: 2.5em;margin-bottom: 0;padding-bottom: 0;height: 30px}
-.nav-down a{color: #fff;}
+.main section.page0 div.focus div.intro .intro_btn span.preview span.txt{text-decoration:underline;cursor:pointer;margin-top:13px;display:block}
+.nav-down{position:fixed;bottom:1em;left:49.5%;cursor:pointer;z-index:9999;font-size:2.5em;margin-bottom:0;padding-bottom:0;height:30px}
+.nav-down a{color:#fff}
 .pulsate-opacity{-webkit-animation:pulsate-op 2s infinite;-moz-animation:pulsate-op 2s infinite;-o-animation:pulsate-op 2s infinite;animation:pulsate-op 2s infinite}
 @-webkit-keyframes pulsate-op{0%{opacity:0.2}
 50%{opacity:1}
@@ -135,35 +99,28 @@ display: block;}
 }@keyframes pulsate-op{0%{opacity:0.2}
 50%{opacity:1}
 100%{opacity:0.2}
-}
-.main section.page1{background:rgb(230,217,200)}/*#75C5C8*/
+}.main section.page1{background:rgb(230,217,200)}
 .main section.page1 h1{text-align:left;padding:0;margin-bottom:15px;font-size:60px;color:black}
-.main section.page1 h2{color:rgba(0,0,0,0.85);text-align:left;font-size: 20px;width:435px;line-height:160%}
-.main section.page1 .credit{text-align:center;margin-left:-34px;color:black;padding:10px;width:410px;clear:both;font-size: 20px;}
-.main section.page1 > img {
-position: absolute;
-top: 230px;
-right: -200px;}
-
+.main section.page1 h2{color:rgba(0,0,0,0.85);text-align:left;font-size:20px;width:435px;line-height:160%}
+.main section.page1 .credit{text-align:center;margin-left:-34px;color:black;padding:10px;width:410px;clear:both;font-size:20px}
+.main section.page1 > img{position:absolute;top:230px;right:-200px}
 .main section.page2{background:#DFE88C url(2.png) no-repeat center bottom}
 .main section.page2 > img{position:absolute;top:-300px;left:50%;margin-left:-1095px}
-.main section.page2 .page_container{margin-top:0px;}/*overflow:hidden*/
-.main section.page2 .page_container span{color:black;text-align: left;margin-top: 120px;font-size: 20px;}
-.main section.page2 .page_container span :before{font-size: 24px;}
-.main section.page2 .page_container span ul li{list-style: none;line-height: 4;}
-.main section.page2 .page_container .left{float: left;}
-.main section.page2 .page_container .right{float: right;}
+.main section.page2 .page_container{margin-top:0px}
+.main section.page2 .page_container span{color:black;text-align:left;margin-top:120px;font-size:20px}
+.main section.page2 .page_container span:before{font-size:24px}
+.main section.page2 .page_container span ul li{list-style:none;line-height:4}
+.main section.page2 .page_container .left{float:left}
+.main section.page2 .page_container .right{float:right}
 .main section.page2 h1{text-align:center;padding:0;margin-top:-64px;font-size:50px;color:black}
-.main section.page2 h2{color:rgba(255,255,255,0.85);text-align:center;line-height:160%;font-weight:100;font-size: 20px;}
+.main section.page2 h2{color:rgba(255,255,255,0.85);text-align:center;line-height:160%;font-weight:100;font-size:20px}
 .viewing-page-2 .back{background:rgba(0,0,0,0.25);color:#FFF}
-
 .main section.page3{background:#9EE88C url(3.png) no-repeat 8% 80px}
 .main section.page3 .page_container{overflow:hidden;width:500px;right:-245px}
 .main section.page3 h1{text-align:left;padding:0;margin-bottom:0;font-size:56px;letter-spacing:-1px;color:black;margin-bottom: 20px}
 .main section.page3 h2{color:rgba(0,0,0,0.85);text-align:left;line-height:160%;font-weight:100;font-size:21px}
 .main section.page3 .p3p{text-align: left;font-size: 28px;line-height: 3}
-
-.main section.page4{background: url(4.png) no-repeat center 0px}
+.main section.page4{background: url(4.png) #E2E4E7 no-repeat center 0px}
 .main section.page4 .page_container{overflow:hidden;width:500px;margin-top: 230px}
 .main section.page4 h1{text-align:center;padding:0;margin-bottom:0;font-size:50px;color:black;margin-bottom: 10px}
 .main section.page4 h2{color:rgba(0,0,0,0.85);text-align:center;line-height:160%;font-weight:100;font-size:20px}
@@ -211,9 +168,3 @@ body.disabled-onepage-scroll .main section.page3 .page_container{width:90%;margi
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
 }
-/*兼容pc的大于1024分辨率*/
-/*@media only screen and  (max-width:1024px){
-.main section.page1 > img {position: absolute;top: 230px;right: -320px;}
-.main section.page3{background: #9EE88C url(3.png) no-repeat 3% 80px;}
-}
-*/
